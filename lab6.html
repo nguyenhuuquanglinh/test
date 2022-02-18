@@ -1,0 +1,21 @@
+<script type="text/javascript">
+class UserError {
+    throwLogin() {
+        throw new Error('Invalid username and password');
+    }
+
+    throwSession = function () {
+        throw new Error('Your request is timeout');
+    }
+}
+var username = 'thehalfheart';
+var password = 'admin@';
+try {
+    if (username !== 'admin' || password != 'admin@'){
+        new UserError().throwLogin();
+    }
+}catch (e){
+    console.log(e.message);
+}
+
+</script>

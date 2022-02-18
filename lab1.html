@@ -1,0 +1,13 @@
+<script language="javascript">
+    var do_alert = setTimeout(function(){
+    	var message = "Học lập trình tại \"freetuts.net\" quá sướng";
+        alert(message);
+    }, 3000);
+ 
+    function clearAlert()
+    {
+        clearTimeout(do_alert);
+    }
+</script>
+ 
+<input type="button" onclick="clearAlert()" value="Clear" />
